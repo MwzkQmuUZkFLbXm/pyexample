@@ -10,7 +10,7 @@ keep = ['a', 'b', 'c', 'd', 'e',
         'z', ' ', '-', "'",'\n']
 
 def normalize(s):
-    """Convert s to normalized string."""
+    """Converts to normalized string."""
     result = ''
     for c in s.lower():
         if c in keep:
@@ -18,7 +18,7 @@ def normalize(s):
     return result
 
 def make_freq_dict(s):
-    """Returns a dictionary whose keys are the words s, 
+    """Returns a dictionary whose keys are the wordss,
     and whose values are the counts of those words"""
 
     s = normalize(s)
